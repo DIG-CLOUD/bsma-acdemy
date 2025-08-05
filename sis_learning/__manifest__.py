@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "sis_learning",
+    'name': "Sis Learning",
 
     'summary': "Short (1 phrase/line) summary of the module's purpose",
 
