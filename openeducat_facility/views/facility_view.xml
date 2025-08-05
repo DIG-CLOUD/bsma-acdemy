@@ -6,9 +6,9 @@
             <field name="model">op.facility</field>
             <field name="priority" eval="8"/>
             <field name="arch" type="xml">
-                <tree string="Facility">
+                <tree string="Facilities">
                     <field name="name"/>
-                    <field name="code"/>
+                    <field name="code" string="Facility Code"/>
                 </tree>
             </field>
         </record>
