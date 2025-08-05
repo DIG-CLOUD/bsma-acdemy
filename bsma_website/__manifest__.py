@@ -2,7 +2,7 @@
     'name': 'BASMA Website',
     'version': '17.0.1.0.0',
     'category': 'Website',
-    'summary': 'Custom website module for BSMA education platform',
+    'summary': 'Custom website module for BSMA education platform.',
     'description': """
         This module customizes the website slides module for BSMA education platform.
         It replaces the courses_all template with a responsive Arabic design.
