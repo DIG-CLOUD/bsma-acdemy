@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Replace the original courses_home template -->
+        <template id="courses_home" name="Odoo Courses Homepage" inherit_id="website_slides.courses_home" priority="99">
+            <xpath expr="." position="replace">
+                <t name="Odoo Courses Homepage" t-name="website_slides.courses_home">
+                    <t t-set="body_classname" t-value="'o_wslides_body'"/>
+                    <t t-call="website.layout">
+                        <div id="wrap" class="wrap o_wslides_wrap">
+                            <div class="oe_structure oe_empty">
+                                <section class="s_text_image pt32 o_colored_level s_custom_snippet pb72" data-snippet="s_image_text" data-name="Custom Image - Text" style="background-image: none;">
+                                    <div class="container">
+                                        <div class="row o_grid_mode" data-row-count="6">
+                                            <div class="o_colored_level o_grid_item g-height-6 g-col-lg-7 col-lg-7" style="z-index: 2; grid-area: 1 / 6 / 7 / 13;">
+                                                <h1><font style="color: rgb(164, 99, 146);">ابدأ رحلتك التعليمية ...الآن</font><br/></h1>
+                                                <h2><strong><font class="text-o-color-1">&amp;nbsp;</font></strong>
+                                                    <span class="h5-fs"/>
+                                                </h2>
+                                                <h2><span class="h5-fs"><font style="color: rgb(87, 87, 86);">ابدأ رحلتك التعليمية مع أكاديمية بصمة اليوم!</font></span></h2>
+                                                <h2><span class="h5-fs"><font style="color: rgb(87, 87, 86);">طوّر مهاراتك، واصنع الفرق، واكتشف قدراتك من خلال دوراتنا التفاعلية المصممة خصيصًا للأطفال المبدعين.<br/>مستقبلك الرقمي يبدأ الآن!</font></span></h2>
+                                                <p style="text-align: justify;"><br/></p>
+                                                <div class="s_social_media o_not_editable text-center" data-snippet="s_social_media" data-name="Social Media">
+                                                    <h4 class="s_social_media_title d-none o_default_snippet_text">مواقع التواصل الاجتماعي</h4>
+                                                    <a href="/website/social/facebook" class="s_social_media_facebook" target="_blank" aria-label="فيسبوك">
+                                                        <i class="fa fa-facebook shadow-sm o_editable_media text-o-color-3 bg-o-color-1 rounded rounded-circle"/>
+                                                    </a>
+                                                    <a href="/website/social/instagram" class="s_social_media_instagram" target="_blank" aria-label="Instagram">
+                                                        <i class="fa shadow-sm o_editable_media fa-instagram text-o-color-3 bg-o-color-1 rounded rounded-circle"/>
+                                                    </a>
+                                                    <a href="/website/social/tiktok" class="s_social_media_tiktok" target="_blank" aria-label="TikTok">
+                                                        <i class="fa fa-tiktok shadow-sm o_editable_media text-o-color-3 bg-o-color-1 rounded-circle rounded"/>
+                                                    </a>
+                                                    <a href="https://api.whatsapp.com/send?phone=201060048475&amp;text&amp;context=Afdv4Z2cwVKAYjAqOn-uymOI8f3cJylEb2NPQNm0MFOk1O0ShCgQJiaKpi8nHKfrPGeoGyQdWrKst7xtwbdjOS4VshLq2tCR8WHVFe739Hv3Z-dBRz-x9TuADFd-MMi7WWrMHcG4DaksvwzWLzVuJALVbA&amp;source&amp;app=facebook" target="_blank" aria-label="whatsapp" class="s_social_media_whatsapp">
+                                                        <i class="fa shadow-sm o_editable_media text-o-color-3 bg-o-color-1 rounded rounded-circle fa-whatsapp"/>
+                                                    </a>
+                                                </div>
+                                                <p style="text-align: justify;"><br/></p>
+                                            </div>
+                                            <div class="o_grid_item g-col-lg-6 g-height-6 o_grid_item_image o_colored_level o_grid_item_image_contain col-lg-6" style="grid-area: 1 / 1 / 7 / 7; z-index: 3;">
+                                                <img src="/bsma_website/static/src/img/header.png" alt="" class="img img-fluid mx-auto o_we_custom_image" style="animation-play-state: paused; transition: none;-webkit-transform: translateX(8.8%)  translateY(8.9%)  scaleX(1.19)  scaleY(1.23);-moz-transform: translateX(8.8%)  translateY(8.9%)  scaleX(1.19)  scaleY(1.23);-ms-transform: translateX(8.8%)  translateY(8.9%)  scaleX(1.19)  scaleY(1.23);-o-transform: translateX(8.8%)  translateY(8.9%)  scaleX(1.19)  scaleY(1.23);transform: translateX(8.8%)  translateY(8.9%)  scaleX(1.19)  scaleY(1.23)" data-mimetype="image/webp"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+
+                            <div class="container mt16 o_wslides_home_nav position-relative">
+                                <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+                                    <t t-call="website.website_search_box_input">
+                                        <t t-set="_form_classes" t-valuef="o_wslides_nav_navbar_right order-lg-3"/>
+                                        <t t-set="search_type" t-valuef="slides"/>
+                                        <t t-set="action" t-valuef="/slides/all"/>
+                                        <t t-set="display_description" t-valuef="true"/>
+                                        <t t-set="display_detail" t-valuef="false"/>
+                                        <t t-set="placeholder">البحث عن الدورات</t>
+                                    </t>
+                                    <button class="navbar-toggler px-2 order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSlidesHomepage" aria-controls="navbarSlidesHomepage" aria-expanded="false" aria-label="تنقل التبديل">
+                                        <span class="navbar-toggler-icon"/>
+                                    </button>
+
+                                    <div class="collapse navbar-collapse order-2" id="navbarSlidesHomepage">
+                                        <div class="navbar-nav pt-3 pt-lg-0">
+                                            <a class="nav-link nav-link me-md-2 o_wslides_home_all_slides" href="/slides/all"><i class="fa fa-graduation-cap me-1"/>الدورات</a>
+                                        </div>
+                                    </div>
+                                </nav>
+
+                                <div class="o_wprofile_email_validation_container">
+                                    <t t-call="website_profile.email_validation_banner">
+                                        <t t-set="redirect_url" t-value="'/slides'"/>
+                                        <t t-set="send_alert_classes" t-value="'alert alert-danger alert-dismissable mt-4 mb-0'"/>
+                                        <t t-set="done_alert_classes" t-value="'alert alert-success alert-dismissable mt-4 mb-0'"/>
+                                        <t t-set="additional_validation_email_message"> وانضم إلى هذا المجتمع</t>
+                                        <t t-set="additional_validated_email_message"> يمكنك الآن المشاركة في التعلم الإلكتروني.</t>
+                                    </t>
+                                </div>
+                            </div>
+
+                            <div class="container o_wslides_home_main">
+                                <div class="row">
+                                    <t t-set="has_side_column" t-value="is_view_active('website_slides.toggle_leaderboard')"/>
+                                    <t t-if="is_public_user">
+                                        <div t-if="has_side_column" class="col-lg-3 order-3 order-lg-2">
+                                            <div class="row">
+                                                <div class="col-12 col-md-5 col-lg-12">
+                                                    <div class="ps-md-5 ps-lg-0">
+                                                        <t t-call="website_slides.slides_home_users_small"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </t>
+                                    <div t-else="" class="col-lg-3 order-lg-2">
+                                        <t t-set="has_side_column" t-value="True"/>
+                                        <div class="o_wslides_home_aside_loggedin card p-3 p-lg-0 mb-4">
+                                            <div class="o_wslides_home_aside_title">
+                                                <div class="d-flex align-items-center">
+                                                    <t t-call="website_slides.slides_misc_user_image">
+                                                        <t t-set="img_class" t-value="'rounded-circle me-1'"/>
+                                                        <t t-set="img_style" t-value="'width: 22px; height: 22px;'"/>
+                                                    </t>
+                                                    <h5 t-esc="user.name" class="d-flex flex-grow-1 mb-0"/>
+                                                    <a class="d-none d-lg-block" t-att-href="'/profile/user/%s' % user.id">أداة العرض</a>
+                                                    <a class="d-lg-none btn btn-sm bg-white border" href="#" data-bs-toggle="collapse" data-bs-target="#o_wslides_home_aside_content">المزيد من المعلومات</a>
+                                                </div>
+                                                <hr class="d-none d-lg-block mt-2 mb-2 mb-1"/>
+                                            </div>
+                                            <div id="o_wslides_home_aside_content" class="collapse d-lg-block">
+                                                <div class="row g-0 mb-5 mt-3 mt-lg-0">
+                                                    <div class="col-12 col-sm-6 col-lg-12">
+                                                        <t t-call="website_slides.slides_home_user_profile_small"/>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-lg-12 ps-md-5 ps-lg-0 mt-lg-4">
+                                                        <t t-call="website_slides.slides_home_user_achievements_small"/>
+                                                    </div>
+                                                    <div class="col-12 col-md-7 col-lg-12 ps-md-5 ps-lg-0 mt-lg-4 mb-3">
+                                                        <t t-call="website_slides.slides_home_achievements_small"/>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-lg-12 ps-md-5 ps-lg-0 mt-lg-4">
+                                                        <t t-call="website_slides.slides_home_users_small"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div t-att-class="'col-lg-9 pe-lg-5 order-lg-1' if has_side_column else 'col-lg pr-lg'">
+                                        <div t-if="invite_error_msg" role="alert" class="o_not_editable alert alert-danger text-center" t-esc="invite_error_msg"/>
+                                        <div class="o_wslides_home_content_section mb-3" t-if="not channels_popular">
+                                            <p class="h2">لم يتم إنشاء دورة بعد</p>
+                                            <p groups="website_slides.group_website_slides_officer">انقر على "جديد" في الزاوية العلوية إلى اليسار لكتابة دورتك الأولى.</p>
+                                        </div>
+                                        <t t-if="channels_my">
+                                            <t t-set="void_count" t-value="3 - len(channels_my[:3])"/>
+                                            <div class="o_wslides_home_content_section mb-3">
+                                                <div class="row o_wslides_home_content_section_title align-items-center">
+                                                    <div class="col pb24">
+                                                        <a href="/slides/all?my=1" class="float-end btn btn-custom text-o-color-1 rounded-circle" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid; border-color: rgb(178, 114, 160);">عرض​​​​ الكل</a>
+                                                        <h5 class="m-0"><strong><font class="text-o-color-1">دوراتي</font></strong></h5>
+                                                        <hr class="mt-2 mb-2"/>
+                                                    </div>
+                                                </div>
+                                                <div class="row mx-n2 mt8">
+                                                    <t t-foreach="channels_my[:3]" t-as="channel">
+                                                        <div class="col-md-4 col-sm-6 px-2 col-xs-12 d-flex">
+                                                            <t t-call="website_slides.course_card"/>
+                                                        </div>
+                                                    </t>
+                                                </div>
+                                            </div>
+                                        </t>
+                                        <div class="o_wslides_home_content_section mb-3" t-if="channels_popular">
+                                            <div class="row o_wslides_home_content_section_title align-items-center">
+                                                <div class="col pb16">
+                                                    <a href="/slides/all" class="float-end btn btn-custom text-o-color-1 rounded-circle" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid; border-color: rgb(178, 114, 160);">عرض الكل</a>
+                                                    <h5 class="m-0"><strong><font class="text-o-color-1">الدورات الأكثر شعبية</font></strong></h5>
+                                                    <hr class="mt-2 mb-2"/>
+                                                </div>
+                                            </div>
+                                            <div class="row mx-n2 mt8">
+                                                <t t-foreach="channels_popular[:3]" t-as="channel">
+                                                    <div class="col-md-4 col-sm-6 px-2 col-xs-12 d-flex">
+                                                        <t t-call="website_slides.course_card"/>
+                                                    </div>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="o_wslides_home_content_section mb-3" t-if="channels_newest">
+                                            <div class="row o_wslides_home_content_section_title align-items-center">
+                                                <div class="col pb16">
+                                                    <a href="/slides/all" class="float-end btn btn-custom text-o-color-1 rounded-circle" data-bs-original-title="" title="" style="border-width: 1px; border-style: solid; border-color: rgb(178, 114, 160);">عرض الكل</a>
+                                                    <h5 class="m-0"><strong><font class="text-o-color-1">أحدث الدورات</font></strong></h5>
+                                                    <hr class="mt-2 mb-2"/>
+                                                </div>
+                                            </div>
+                                            <div class="row mx-n2 mt8">
+                                                <t t-foreach="channels_newest[:3]" t-as="channel">
+                                                    <div class="col-md-4 col-sm-6 px-2 col-xs-12 d-flex">
+                                                        <t t-call="website_slides.course_card"/>
+                                                    </div>
+                                                </t>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <t t-call="website_slides.courses_footer"/>
+                        </div>
+
+                        <section class="s_text_image o_colored_level pb8 pt16" style="background: linear-gradient(to left, rgb(251, 226, 187), rgb(245, 245, 245)); border-radius: 20px;">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-7 text-end o_colored_level" style="text-align: center;">
+                                        <h5 style="color: rgb(185, 124, 180); font-weight: 500; font-size: 18px; margin-bottom: 10px; text-align: right;">
+                                            <span class="h2-fs"><strong>حدد مستواك</strong></span>
+                                        </h5>
+                                        <h2 style="font-size: 38px; font-weight: bold; color: rgb(34, 34, 34); margin-bottom: 15px; text-align: right;">
+                                            <font class="text-800">اختبر نفسك مجاناً</font>
+                                        </h2>
+                                        <p style="text-align: right;">
+                                            <span class="h3-fs"><font class="text-800">في اكاديمية بصمة لتعليم البرمجة</font></span>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-5 o_colored_level text-start">
+                                        <img src="/bsma_website/static/src/img/footer.png" alt="" class="img-fluid rounded img o_we_custom_image" loading="lazy" data-mimetype="image/png"/>
+                                    </div>
+                                </div>
+                                <div class="mt-4 text-end">
+                                    <a href="#" class="btn" style="border: 2px solid #b97cb4; color: #b97cb4; padding: 10px 30px; font-size: 18px; border-radius: 30px; text-decoration: none;" data-bs-original-title="" title="">
+                                        ابدأ الاختبار
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <hr style="border: none; height: 2px; background-color: #A46392; width: 100%; margin: 0;"/>
+                    </t>
+                </t>
+            </xpath>
+        </template>
+
+        <!-- Add Certifications link after the courses link -->
+        <template id="courses_home_certifications" inherit_id="bsma_website.courses_home" priority="100">
+            <xpath expr="//a[hasclass('o_wslides_home_all_slides')]" position="after">
+                <a class="nav-link nav-link d-flex" href="/slides/all?slide_category=certification">
+                    <t t-call="website_slides_survey.o_wss_certification_icon"/>
+                    <span class="ms-1">الشهادات</span>
+                </a>
+            </xpath>
+        </template>
+    </data>
+</odoo>
