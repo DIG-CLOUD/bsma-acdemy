@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sis_learning_sis_learning,sis_learning.sis_learning,model_sis_learning_sis_learning,base.group_user,1,1,1,1
