@@ -24,7 +24,7 @@
             <field name="model">op.student.course</field>
             <field name="priority" eval="8"/>
             <field name="arch" type="xml">
-                <form string="Student Course Detail">
+                <form string="Student Course Details">
                     <header>
                             <field name="state" widget="statusbar"/>
                     </header>
