@@ -1,5 +1,5 @@
 {
-    'name': 'BASMA Website',
+    'name': 'BSMA Edu Website',
     'version': '17.0.1.0.0',
     'category': 'Website',
     'summary': 'Custom website module for BSMA education platform.',
