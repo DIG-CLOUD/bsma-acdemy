@@ -1,0 +1,218 @@
+/* Course Join Popover Styling - Odoo Enterprise Theme */
+/* This file contains all styling related to the course join popover with bigger fonts and Odoo Enterprise colors */
+
+/* Main popover container styling */
+.popover.fade.show.bs-popover-bottom {
+    max-width: 400px !important;
+    font-size: 18px !important;
+    border: 2px solid #017e84 !important;
+    box-shadow: 0 10px 30px rgba(1, 126, 132, 0.3) !important;
+    background: linear-gradient(135deg, #ffffff, #f8f9fa) !important;
+    border-radius: 8px !important;
+}
+
+/* Popover header styling */
+.popover.fade.show.bs-popover-bottom .popover-header {
+    background: linear-gradient(135deg, #017e84, #00a09d) !important;
+    color: white !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    border-bottom: none !important;
+    padding: 15px 20px !important;
+    border-top-left-radius: 6px !important;
+    border-top-right-radius: 6px !important;
+}
+
+/* Popover body styling */
+.popover.fade.show.bs-popover-bottom .popover-body {
+    padding: 25px !important;
+    font-size: 18px !important;
+    line-height: 1.8 !important;
+    color: #2d3436 !important;
+    text-align: center !important;
+    background: #ffffff !important;
+}
+
+/* Popover arrow styling */
+.popover.fade.show.bs-popover-bottom .popover-arrow::before {
+    border-bottom-color: #017e84 !important;
+}
+
+.popover.fade.show.bs-popover-bottom .popover-arrow::after {
+    border-bottom-color: #017e84 !important;
+}
+
+/* Target the div elements inside the popover content */
+.popover.fade.show.bs-popover-bottom .popover-body > div {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    line-height: 1.6 !important;
+    margin: 15px 0 !important;
+    color: #2d3436 !important;
+}
+
+/* Style the anchor tags inside the popover with Odoo Enterprise colors */
+.popover.fade.show.bs-popover-bottom .popover-body a {
+    display: inline-block !important;
+    padding: 12px 25px !important;
+    margin: 8px 6px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    border-radius: 6px !important;
+    transition: all 0.3s ease !important;
+    border: 2px solid #017e84 !important;
+    background: linear-gradient(135deg, #017e84, #00a09d) !important;
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(1, 126, 132, 0.2) !important;
+    text-transform: capitalize !important;
+    letter-spacing: 0.5px !important;
+    min-width: 120px !important;
+    text-align: center !important;
+}
+
+/* Hover effects for anchor tags */
+.popover.fade.show.bs-popover-bottom .popover-body a:hover {
+    background: linear-gradient(135deg, #00a09d, #017e84) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 18px rgba(1, 126, 132, 0.4) !important;
+    color: white !important;
+    text-decoration: none !important;
+    border-color: #00a09d !important;
+}
+
+/* Active state for anchor tags */
+.popover.fade.show.bs-popover-bottom .popover-body a:active {
+    transform: translateY(0) !important;
+    box-shadow: 0 2px 8px rgba(1, 126, 132, 0.3) !important;
+}
+
+/* Focus state for accessibility */
+.popover.fade.show.bs-popover-bottom .popover-body a:focus {
+    outline: 3px solid rgba(1, 126, 132, 0.3) !important;
+    outline-offset: 2px !important;
+}
+
+/* Style multiple links differently for visual hierarchy (e.g., create account as secondary) */
+.popover.fade.show.bs-popover-bottom .popover-body a:nth-child(even) {
+    background: linear-gradient(135deg, #ffffff, #f8f9fa) !important;
+    color: #017e84 !important;
+    border-color: #017e84 !important;
+}
+
+.popover.fade.show.bs-popover-bottom .popover-body a:nth-child(even):hover {
+    background: linear-gradient(135deg, #017e84, #00a09d) !important;
+    color: white !important;
+    border-color: #017e84 !important;
+}
+
+/* Special styling for text content containing "Please" */
+.popover.fade.show.bs-popover-bottom .popover-body > div:first-child {
+    font-weight: 600 !important;
+    margin-bottom: 20px !important;
+    color: #374151 !important;
+}
+
+/* Responsive design for tablets */
+@media (max-width: 991px) {
+    .popover.fade.show.bs-popover-bottom {
+        max-width: 350px !important;
+    }
+
+    .popover.fade.show.bs-popover-bottom .popover-body {
+        padding: 20px !important;
+        font-size: 17px !important;
+    }
+
+    .popover.fade.show.bs-popover-bottom .popover-body > div {
+        font-size: 17px !important;
+    }
+
+    .popover.fade.show.bs-popover-bottom .popover-body a {
+        padding: 11px 22px !important;
+        font-size: 15px !important;
+        margin: 6px 5px !important;
+    }
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    .popover.fade.show.bs-popover-bottom {
+        max-width: 320px !important;
+        font-size: 16px !important;
+    }
+
+    .popover.fade.show.bs-popover-bottom .popover-header {
+        padding: 12px 16px !important;
+        font-size: 16px !important;
+    }
+
+    .popover.fade.show.bs-popover-bottom .popover-body {
+        padding: 20px 15px !important;
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+    }
+
+    .popover.fade.show.bs-popover-bottom .popover-body > div {
+        font-size: 16px !important;
+        margin: 12px 0 !important;
+    }
+
+    .popover.fade.show.bs-popover-bottom .popover-body a {
+        padding: 10px 20px !important;
+        font-size: 14px !important;
+        margin: 6px 4px !important;
+        min-width: 100px !important;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .popover.fade.show.bs-popover-bottom {
+        max-width: 280px !important;
+    }
+
+    .popover.fade.show.bs-popover-bottom .popover-body {
+        padding: 15px 12px !important;
+    }
+
+    .popover.fade.show.bs-popover-bottom .popover-body a {
+        display: block !important;
+        width: 100% !important;
+        margin: 8px 0 !important;
+        text-align: center !important;
+    }
+}
+
+/* Animation for popover appearance */
+.popover.fade.show.bs-popover-bottom {
+    animation: popoverSlideIn 0.3s ease-out !important;
+}
+
+@keyframes popoverSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Dark mode support (if needed in future) */
+@media (prefers-color-scheme: dark) {
+    .popover.fade.show.bs-popover-bottom {
+        background: linear-gradient(135deg, #1f2937, #374151) !important;
+        border-color: #017e84 !important;
+    }
+
+    .popover.fade.show.bs-popover-bottom .popover-body {
+        background: #1f2937 !important;
+        color: #f9fafb !important;
+    }
+
+    .popover.fade.show.bs-popover-bottom .popover-body > div {
+        color: #f9fafb !important;
+    }
+}
