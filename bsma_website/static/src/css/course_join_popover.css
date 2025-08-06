@@ -9,6 +9,8 @@
     box-shadow: 0 10px 30px rgba(1, 126, 132, 0.3) !important;
     background: linear-gradient(135deg, #ffffff, #f8f9fa) !important;
     border-radius: 8px !important;
+    overflow: visible !important;
+    margin-top: 8px !important;
 }
 
 /* Popover header styling */
@@ -31,6 +33,10 @@
     color: #2d3436 !important;
     text-align: center !important;
     background: #ffffff !important;
+    border-bottom-left-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+    border-top-left-radius: 6px !important;
+    border-top-right-radius: 6px !important;
 }
 
 /* Popover arrow styling */
@@ -184,11 +190,6 @@
         text-align: center !important;
         padding: 8px 10px !important;
     }
-}
-
-/* Animation for popover appearance */
-.popover.fade.show.bs-popover-bottom {
-    animation: popoverSlideIn 0.3s ease-out !important;
 }
 
 @keyframes popoverSlideIn {
