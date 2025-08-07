@@ -260,6 +260,7 @@
   justify-content: center;
 
   direction: rtl;
+  float: right;
 }
 
 .o_wslides_course_card {

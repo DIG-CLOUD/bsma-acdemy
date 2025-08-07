@@ -50,7 +50,7 @@
     <xpath expr="//div[@class='card-footer bg-white text-600 px-3']" position="replace">
         <!--        t-if="not channel.is_member"-->
         <div class="card-footer bg-white text-600 px-3">
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="justify-content-between align-items-center">
                 <a class="bsma-btn-subscribe btn ms-auto text-right" t-attf-href="/slides/#{slug(channel)}" >
                     الإشتراك في الدورة
                 </a>
