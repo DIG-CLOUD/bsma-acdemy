@@ -263,6 +263,9 @@
   float: right;
 }
 
+.o_wslides_course_card .card-body{
+    text-align: left !important;
+}
 .o_wslides_course_card {
     font-family: 'Tajawal', sans-serif;
     border: 2px solid #B69BAF !important;
