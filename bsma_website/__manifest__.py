@@ -18,6 +18,8 @@
         'portal',
     ],
     'data': [
+        'views/courses_views.xml',
+        'views/course_card.xml',
         'views/templates.xml',
     ],
     'assets': {

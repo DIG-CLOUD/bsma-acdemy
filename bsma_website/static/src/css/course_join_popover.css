@@ -5,7 +5,7 @@
 .popover.fade.show.bs-popover-bottom {
     max-width: 350px !important;
     font-size: 16px !important;
-    border: 2px solid #017e84 !important;
+    border: 2px solid #B272A0 !important;
     box-shadow: 0 10px 30px rgba(1, 126, 132, 0.3) !important;
     background: linear-gradient(135deg, #ffffff, #f8f9fa) !important;
     border-radius: 8px !important;
@@ -15,7 +15,7 @@
 
 /* Popover header styling */
 .popover.fade.show.bs-popover-bottom .popover-header {
-    background: linear-gradient(135deg, #017e84, #00a09d) !important;
+    background: linear-gradient(135deg, #B272A0, #DBA2CB) !important;
     color: white !important;
     font-weight: 600 !important;
     font-size: 16px !important;
@@ -30,7 +30,7 @@
     padding: 20px !important;
     font-size: 15px !important;
     line-height: 1.6 !important;
-    color: #2d3436 !important;
+    color: #6a3a5d !important;
     text-align: center !important;
     background: #ffffff !important;
     border-bottom-left-radius: 6px !important;
@@ -41,11 +41,11 @@
 
 /* Popover arrow styling */
 .popover.fade.show.bs-popover-bottom .popover-arrow::before {
-    border-bottom-color: #017e84 !important;
+    border-bottom-color: #B272A0 !important;
 }
 
 .popover.fade.show.bs-popover-bottom .popover-arrow::after {
-    border-bottom-color: #017e84 !important;
+    border-bottom-color: #B272A0 !important;
 }
 
 /* Target the div elements inside the popover content */
@@ -54,7 +54,7 @@
     font-weight: 500 !important;
     line-height: 1.5 !important;
     margin: 12px 0 !important;
-    color: #2d3436 !important;
+    color: #6a3a5d !important;
 }
 
 /* Style the anchor tags inside the popover with Odoo Enterprise colors - SMALLER BUTTONS */
@@ -67,8 +67,8 @@
     text-decoration: none !important;
     border-radius: 4px !important;
     transition: all 0.3s ease !important;
-    border: 1px solid #017e84 !important;
-    background: linear-gradient(135deg, #017e84, #00a09d) !important;
+    border: 1px solid #B272A0 !important;
+    background: linear-gradient(135deg, #B272A0, #DBA2CB) !important;
     color: white !important;
     box-shadow: 0 2px 8px rgba(1, 126, 132, 0.2) !important;
     text-transform: capitalize !important;
@@ -79,12 +79,12 @@
 
 /* Hover effects for anchor tags */
 .popover.fade.show.bs-popover-bottom .popover-body a:hover {
-    background: linear-gradient(135deg, #00a09d, #017e84) !important;
+    background: linear-gradient(135deg, #DBA2CB, #B272A0) !important;
     transform: translateY(-1px) !important;
     box-shadow: 0 4px 12px rgba(1, 126, 132, 0.3) !important;
     color: white !important;
     text-decoration: none !important;
-    border-color: #00a09d !important;
+    border-color: #DBA2CB !important;
 }
 
 /* Active state for anchor tags */
@@ -102,14 +102,14 @@
 /* Style multiple links differently for visual hierarchy (e.g., create account as secondary) */
 .popover.fade.show.bs-popover-bottom .popover-body a:nth-child(even) {
     background: linear-gradient(135deg, #ffffff, #f8f9fa) !important;
-    color: #017e84 !important;
-    border-color: #017e84 !important;
+    color: #B272A0 !important;
+    border-color: #B272A0 !important;
 }
 
 .popover.fade.show.bs-popover-bottom .popover-body a:nth-child(even):hover {
-    background: linear-gradient(135deg, #017e84, #00a09d) !important;
+    background: linear-gradient(135deg, #B272A0, #DBA2CB) !important;
     color: white !important;
-    border-color: #017e84 !important;
+    border-color: #B272A0 !important;
 }
 
 /* Special styling for text content containing "Please" */
@@ -207,7 +207,7 @@
 @media (prefers-color-scheme: dark) {
     .popover.fade.show.bs-popover-bottom {
         background: linear-gradient(135deg, #1f2937, #374151) !important;
-        border-color: #017e84 !important;
+        border-color: #B272A0 !important;
     }
 
     .popover.fade.show.bs-popover-bottom .popover-body {
@@ -218,4 +218,32 @@
     .popover.fade.show.bs-popover-bottom .popover-body > div {
         color: #f9fafb !important;
     }
+}
+
+
+/* Website course card */
+/* important classes: card-title */
+
+.o_wslides_course_card .img-fluid{
+  padding: 5px;
+  border-radius: 10px;
+  height: 150px;
+    object-fit: cover;
+
+}
+
+.o_wslides_course_card .bsma-btn-subscribe{
+  width: 130px;
+  height: 35px;
+  background-color: #B272A0 !important;
+  color: white !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+.o_wslides_course_card {
+    border: 2px solid #B69BAF !important;
+    box-shadow: 0 4px 12px rgba(135, 53, 130, 0.17) !important;
+    border-radius: 8px !important;
+    background: linear-gradient(135deg, #ffffff, #f8f9fa) !important;
 }

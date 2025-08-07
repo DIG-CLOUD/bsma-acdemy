@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<!--    B272A0-->
+<template id="course_card_inherit" inherit_id="website_slides.course_card">
+    <!-- Example: Add content after the course title -->
+    <xpath expr="//div[hasclass('o_wslides_desc_truncate_3')]" position="after">
+        <div class="o_wslides_desc_truncate_3">
+            <p class="text-muted">
+                <t t-if="channel.target_age" >
+                    <span>Target Age:</span> <b t-esc="channel.target_age"/>
+                </t>
+            </p>
+        </div>
+<div class="d-flex align-items-center flex-wrap mt-2" style="font-size: 14px;">
+    <!-- Duration Hours -->
+    <t t-if="channel.duration_hours">
+        <div class="me-1 d-flex align-items-center text-muted">
+            <i class="fa fa-clock-o me-1" style="color:#b76ba3;"></i>
+            <strong class="me-1" t-esc="channel.duration_hours"/> Hour
+        </div>
+    </t>
+
+    <!-- Start Date -->
+    <t t-if="channel.start_date">
+        <div class="me-1 d-flex align-items-center text-muted">
+            <i class="fa fa-calendar me-1" style="color:#b76ba3;"></i>
+            <strong class="me-1">
+                <t t-esc="channel.start_date.strftime('%d-%m-%Y')"/>
+            </strong>
+        </div>
+    </t>
+
+    <!-- Duration Weeks -->
+    <t t-if="channel.duration_weeks">
+        <div class="me-1 d-flex align-items-center text-muted">
+            <i class="fa fa-calendar-check-o me-1" style="color:#b76ba3;"></i>
+            <t t-esc="channel.duration_weeks"/> Weeks
+        </div>
+    </t>
+
+    <!-- Price -->
+    <t t-if="channel.course_price">
+        <div class="ms-auto fw-bold" style="color: #b76ba3;">
+            <t t-esc="channel.course_price"/>SAR
+        </div>
+    </t>
+</div>
+    </xpath>
+    <!-- Example: Modify the card footer -->
+    <xpath expr="//div[@class='card-footer bg-white text-600 px-3']" position="replace">
+        <!--        t-if="not channel.is_member"-->
+        <div class="card-footer bg-white text-600 px-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <a class="bsma-btn-subscribe btn ms-auto text-right" t-attf-href="/slides/#{slug(channel)}" >
+                    الإشتراك في الدورة
+                </a>
+            </div>
+        </div>
+    </xpath>
+</template></odoo>
