@@ -31,10 +31,10 @@
                 </t>
             </p>
         </div>
-        <div class="d-flex align-items-center flex-wrap mt-2" style="font-size: 14px;">
+        <div class="d-flex align-items-center mt-2" style="font-size: 13px;">
             <!-- Duration Hours -->
             <t t-if="channel.duration_hours">
-                <div class="me-1 d-flex align-items-center text-muted">
+                <div class="d-flex align-items-center text-muted">
                     <i class="fa fa-clock-o me-1" style="color:#b76ba3;"></i>
                     <strong class="me-1" t-esc="channel.duration_hours"/> Hour
                 </div>
