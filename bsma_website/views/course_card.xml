@@ -11,40 +11,40 @@
                 </t>
             </p>
         </div>
-<div class="d-flex align-items-center flex-wrap mt-2" style="font-size: 14px;">
-    <!-- Duration Hours -->
-    <t t-if="channel.duration_hours">
-        <div class="me-1 d-flex align-items-center text-muted">
-            <i class="fa fa-clock-o me-1" style="color:#b76ba3;"></i>
-            <strong class="me-1" t-esc="channel.duration_hours"/> Hour
-        </div>
-    </t>
+        <div class="d-flex align-items-center flex-wrap mt-2" style="font-size: 14px;">
+            <!-- Duration Hours -->
+            <t t-if="channel.duration_hours">
+                <div class="me-1 d-flex align-items-center text-muted">
+                    <i class="fa fa-clock-o me-1" style="color:#b76ba3;"></i>
+                    <strong class="me-1" t-esc="channel.duration_hours"/> Hour
+                </div>
+            </t>
 
-    <!-- Start Date -->
-    <t t-if="channel.start_date">
-        <div class="me-1 d-flex align-items-center text-muted">
-            <i class="fa fa-calendar me-1" style="color:#b76ba3;"></i>
-            <strong class="me-1">
-                <t t-esc="channel.start_date.strftime('%d-%m-%Y')"/>
-            </strong>
-        </div>
-    </t>
+            <!-- Start Date -->
+            <t t-if="channel.start_date">
+                <div class="me-1 d-flex align-items-center text-muted">
+                    <i class="fa fa-calendar me-1" style="color:#b76ba3;"></i>
+                    <strong class="me-1">
+                        <t t-esc="channel.start_date.strftime('%d-%m-%Y')"/>
+                    </strong>
+                </div>
+            </t>
 
-    <!-- Duration Weeks -->
-    <t t-if="channel.duration_weeks">
-        <div class="me-1 d-flex align-items-center text-muted">
-            <i class="fa fa-calendar-check-o me-1" style="color:#b76ba3;"></i>
-            <t t-esc="channel.duration_weeks"/> Weeks
-        </div>
-    </t>
+            <!-- Duration Weeks -->
+            <t t-if="channel.duration_weeks">
+                <div class="me-1 d-flex align-items-center text-muted">
+                    <i class="fa fa-calendar-check-o me-1" style="color:#b76ba3;"></i>
+                    <t t-esc="channel.duration_weeks"/> Weeks
+                </div>
+            </t>
 
-    <!-- Price -->
-    <t t-if="channel.course_price">
-        <div class="ms-auto fw-bold" style="color: #b76ba3;">
-            <t t-esc="channel.course_price"/>SAR
+            <!-- Price -->
+            <t t-if="channel.course_price">
+                <div class="ms-auto fw-bold" style="color: #b76ba3;">
+                    <t t-esc="channel.course_price"/> SAR
+                </div>
+            </t>
         </div>
-    </t>
-</div>
     </xpath>
     <!-- Example: Modify the card footer -->
     <xpath expr="//div[@class='card-footer bg-white text-600 px-3']" position="replace">
@@ -57,4 +57,5 @@
             </div>
         </div>
     </xpath>
-</template></odoo>
+</template>
+</odoo>
