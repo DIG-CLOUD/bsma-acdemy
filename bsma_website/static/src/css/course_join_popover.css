@@ -266,7 +266,8 @@
 .o_wslides_course_card .card-title{
     font-weight: bold !important;
 }
-.o_wslides_course_card .card-body{
+.o_wslides_course_card .card-body {
+    direction: ltr !important;
     text-align: left !important;
 }
 .o_wslides_course_card {
