@@ -34,7 +34,7 @@
             <t t-if="channel.duration_weeks">
                 <div class="me-1 d-flex align-items-center text-muted">
                     <i class="fa fa-calendar-check-o me-1" style="color:#b76ba3;"></i>
-                    <t t-esc="channel.duration_weeks"/> Weeks
+                    <strong t-esc="channel.duration_weeks"/> Weeks
                 </div>
             </t>
 
