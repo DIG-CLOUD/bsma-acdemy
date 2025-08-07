@@ -3,6 +3,26 @@
 <!--    B272A0-->
 <template id="course_card_inherit" inherit_id="website_slides.course_card">
     <!-- Example: Add content after the course title -->
+    <xpath expr="//div[hasclass('card-body')]" position="replace">
+        <div class="card-body p-3" style="direction: ltr !important; text-align: left !important;">
+            <a class="card-title h5 mb-2 o_wslides_desc_truncate_2" t-attf-href="/slides/#{slug(channel)}" t-field="channel.name"/>
+            <span t-if="not channel.is_published" class="badge text-bg-danger p-1">Unpublished</span>
+            <div class="card-text d-flex flex-column flex-grow-1 mt-1">
+                <div class="fw-light o_wslides_desc_truncate_3" t-field="channel.description_short"/>
+                <div t-if="channel_frontend_tags" class="mt-auto pt-1 o_wslides_desc_truncate_2_badges">
+                    <t t-foreach="channel_frontend_tags" t-as="tag">
+                        <t t-if="search_tags">
+                            <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="badge post_link #{'text-bg-primary' if tag in search_tags else 'o_wslides_channel_tag o_tag_color_0'}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name"/>
+                        </t>
+                        <t t-else="">
+                            <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="badge post_link o_wslides_channel_tag #{'o_tag_color_'+str(tag.color)}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name"/>
+                        </t>
+                    </t>
+                </div>
+            </div>
+        </div>
+    </xpath>
+
     <xpath expr="//div[hasclass('o_wslides_desc_truncate_3')]" position="after">
         <div class="o_wslides_desc_truncate_3">
             <p class="text-muted">
