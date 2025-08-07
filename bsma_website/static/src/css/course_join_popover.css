@@ -266,9 +266,9 @@
 .o_wslides_course_card .card-title{
     font-weight: bold !important;
 }
-.o_wslides_course_card .card-body {
-    direction: ltr !important;
+html[dir="rtl"] .o_wslides_course_card .card-body {
     text-align: left !important;
+    direction: ltr !important;
 }
 .o_wslides_course_card {
     font-family: 'Tajawal', sans-serif;
