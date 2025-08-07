@@ -1,6 +1,17 @@
 /* Course Join Popover Styling - Odoo Enterprise Theme */
 /* This file contains all styling related to the course join popover with bigger fonts and Odoo Enterprise colors */
-
+@font-face {
+    font-family: 'Cairo';
+    src: url('/bsma_website/static/src/fonts/Cairo-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Tajawal';
+    src: url('/bsma_website/static/src/fonts/Tajawal-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 /* Main popover container styling */
 .popover.fade.show.bs-popover-bottom {
     max-width: 350px !important;
@@ -232,16 +243,27 @@
 
 }
 
-.o_wslides_course_card .bsma-btn-subscribe{
+.o_wslides_course_card .bsma-btn-subscribe {
   width: 130px;
   height: 35px;
   background-color: #B272A0 !important;
   color: white !important;
-  font-size: 14px !important;
+  font-size: 15px !important;
   font-weight: 600 !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  direction: rtl;
 }
 
 .o_wslides_course_card {
+    font-family: 'Tajawal', sans-serif;
     border: 2px solid #B69BAF !important;
     box-shadow: 0 4px 12px rgba(135, 53, 130, 0.17) !important;
     border-radius: 8px !important;
