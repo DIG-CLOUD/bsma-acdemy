@@ -20,6 +20,7 @@
     'data': [
         'views/courses_views.xml',
         'views/course_card.xml',
+        'views/signup_form.xml',
         'views/templates.xml',
     ],
     'assets': {
